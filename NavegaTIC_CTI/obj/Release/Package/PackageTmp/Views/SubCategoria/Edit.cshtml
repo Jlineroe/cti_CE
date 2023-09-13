@@ -1,0 +1,67 @@
+﻿@model NavegaTIC_CTI.Models.Subcategoria
+
+@{
+    var selected = "";
+    List<NavegaTIC_CTI.Models.Categoria> categorias = ViewBag.categorias;
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Subcategoria</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.CategoriaName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <select id="IdCategoria" class="form-control" name="IdCategoria">
+                    <option value=""> Seleccione..</option>
+                    @foreach (var item in categorias)
+                    {
+                        if(item.CategoriaId == Model.pri)
+                        {
+                            selected = "selected";
+                        }
+                        else
+                        {
+                            selected = "";
+                        }
+                        <option @selected value="@item.CategoriaId">@item.CategoriaName</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.SubcategoriaId)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SubcategoriaName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SubcategoriaName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SubcategoriaName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

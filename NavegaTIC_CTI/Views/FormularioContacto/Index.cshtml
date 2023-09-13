@@ -1,0 +1,88 @@
+﻿@model NavegaTIC_CTI.Models.Caso 
+
+
+@{
+    
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    if (Model != null)
+    {
+        if (Convert.ToInt32(Model.CasoId) > 0)
+        {
+        <script>
+            window.alert("Se ha generado el caso '# " + @Model.CasoId+ "', te enviaremos información a tu correo electrónico registrado o nos comunicaremos contigo");
+        </script>
+        }
+    }
+    <div class="form-horizontal">
+        <h4>Escribele a Atlanter Experience</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div class="col-md-3">
+                <label>Queremos escucharte</label>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <textarea class="form-control" name="Description" id="bodytxt" rows="5" cols="120" style="max-width: 598px;"></textarea>
+            </div>
+
+        </div>
+        <div class="form-group">
+
+            
+            <div class="col-md-2">
+                <input class="checkbox-inline" type="radio" name="soporteit" id="soporteit" onclick="refreshcategoria_aibt(113)" /> Soporte IT
+            </div>
+            @*<div class="col-md-4">
+                <input class="checkbox-inline" type="radio" name="soporteit" id="expemple" onclick="refreshcategoria_aibt(114)" /> Experiencia del empleado
+            </div>*@
+            <input type="hidden" id="Group" name="Group" />
+            <input type="hidden" id="NameCategory" name="NameCategory" />
+            @*<input type="hidden" id="NameSubCategory" name="NameSubCategory" />*@
+        </div>
+        <div class="form-group row" id="tipificacion_aibt" style="display:none;">
+            <div class="col-sm-3">
+                <label for="" class="col-5 col-form-label " required>Categoría</label>
+                <select name="IdCategory" id="categoria" class="form-control" onchange="changeCategoria_aibt(this.value);">
+                    
+                </select>
+            </div>
+            
+            <div class="col-sm-3">
+                <label for="" class="col-5 col-form-label ">Subategoría</label>
+            
+                <select name="IdSubCategory" id="subcategoria" class="form-control" onchange="selectnamesubca();">
+                </select>
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+    }
+
+   
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script src="~/Scripts/GetCaso.js"></script>
+    }
+    

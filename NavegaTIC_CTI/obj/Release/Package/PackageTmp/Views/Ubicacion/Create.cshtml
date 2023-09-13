@@ -1,0 +1,57 @@
+﻿@model NavegaTIC_CTI.Models.Ubicacion
+
+    @{
+        List<NavegaTIC_CTI.Models.Sede> sedes = ViewBag.sedes;
+        ViewBag.Title = "Crear";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h2>Crear</h2>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Subcategoria</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.SedeName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <select id="IdSede" class="form-control"  name="IdSede">
+                        <option value=""> Seleccione..</option>
+                        @foreach (var item in sedes)
+                        {
+                            <option value="@item.SedeId">@item.SedeName</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.UbicacionName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.UbicacionName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UbicacionName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Volver a la lista", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

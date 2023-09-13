@@ -1,0 +1,70 @@
+﻿@model IEnumerable<NavegaTIC_CTI.Models.Detalle>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var table = $('#tab3').DataTable({
+
+                paging: true
+
+            });
+        });
+    </script>
+}
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "Create")
+</p>
+<table id="tab3" class="table table-striped stripe row-border order-column" cellspacing="3" width="100%">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.DetalleName)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.SubcategoriaName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Campaña)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.DetalleName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubcategoriaName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Campaña)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.DetalleId }) |
+
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.DetalleId })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

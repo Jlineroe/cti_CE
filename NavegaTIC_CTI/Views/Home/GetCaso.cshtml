@@ -1,0 +1,595 @@
+﻿
+@{
+    @model NavegaTIC_CTI.Models.Caso
+
+    // Dictionary<int, string> sedes = ViewBag.sedes;
+    List<NavegaTIC_CTI.Models.Sede> sedes = ViewBag.sedes;
+    List<NavegaTIC_CTI.Models.AsignadoA> asignadoas = ViewBag.asignadoas;
+    List<NavegaTIC_CTI.Models.Categoria> categorias = ViewBag.categorias;
+    List<NavegaTIC_CTI.Models.Detalle> detalles = ViewBag.detalles;
+    List<NavegaTIC_CTI.Models.EscaladoA> escaladoas = ViewBag.escaladoas;
+    List<NavegaTIC_CTI.Models.Estado> estados = ViewBag.estados;
+    List<NavegaTIC_CTI.Models.Solucion> soluciones = ViewBag.soluciones;
+    List<NavegaTIC_CTI.Models.Subcategoria> subcategorias = ViewBag.subcategorias;
+    List<NavegaTIC_CTI.Models.InforMail> body = ViewBag.body2;
+    List<NavegaTIC_CTI.Models.Transferencia> transferencias = ViewBag.transferencias;
+    string urlRepository = ViewBag.urlRepository;
+    string horasoli = Convert.ToDateTime(Model.FechaSolicitud).ToString("yyyy-MM-dd HH:mm:ss");
+    int cont = 1;
+    string stampa = DateTime.Now.ToString("yyyy-MM-ddTHH:mm");
+    string selected = "";
+    int idubi = 1;
+
+}
+<script type="text/javascript">
+    function bodymailload() {
+        console.log("Body mail console")
+        var Nombre = $("#Nombre").val();
+        var identificacion = $("#Identificacion").val();
+        var campaña = $("#CostoId").val();
+        var CargoId = $("#CargoId").val();
+        var categoria = $("#categoria").val();
+        var subcategoria = $("#subcategoria").val();
+        var ubicacion = $("#ubicacion").val();
+        var detalle = $("#detalle").val();
+        var asignadoa = $("#asignadoa").val();
+        var identificacion = $("#Identificacion").val();
+
+        var bodymail =
+            "Nombre de usuario: " + Nombre +
+            "Cédula: " + identificacion +
+            "Campaña: " + campaña +
+            "Cargo: " + CargoId +
+            "Categoría: " + categoria +
+            "Subcategoría: " + subcategoria +
+            "Ubicación: " + ubicacion +
+            //"Anydesk (Si aplica):"++
+        "Diagnostico o Descripción del problema: " + detalle +
+            "Tecnico que ejecuta:" + asignadoa;
+
+        $("#bodymail").text('test');
+
+       
+    }
+</script>
+<div class="card">
+    <div class="card-header">
+        <div class="row" style=" margin-top: 25px;">
+            <div class="col-md-4">
+                <img src="https://intranet.atlanticqi.com/assets/img/logoTansparente.png" alt="Atlantic"
+                     class="rounded float-left" style="width:75%;">
+            </div>
+            <div class="col-md-4">
+                <h4 class="m-0 font-weight-bold text-primary" style="
+            text-align: -webkit-center; ">
+                    ATLANTER EXPERIENCE<br />
+
+                </h4>
+            </div>
+            <div class="col-md-4" style="text-align: right;">
+                <div class="m-0 font-weight-bold text-primary">@Model.Usuario</div>
+                <a href="@urlRepository" type="button" target="_blank">
+                    <img style="width: 15%;"
+                         class="rounded"
+                         src="https://i.pinimg.com/originals/57/a5/b2/57a5b2f6c3ad0916f269266e4f05d921.png" />
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-body" style=" margin-top: 25px;">
+        <div class="clock" style="text-align: -webkit-right;"></div>
+        <input type="hidden" class="clock" id="clock">
+        <div class="form-group row">
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Fecha</label>
+            </div>
+            <div class="col-sm-3">
+                <input id="FechaSolicitud" type="text" class="form-control" value="@Model.FechaSolicitud.ToString("yyyy-MM-ddTHH:mm:ss")" readonly />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Canal</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="Canal" class="form-control"  value="@Model.Canal" readonly />
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body" id="ContentForm">
+        <div class="card-header">
+            <h4 class="m-0 font-weight-bold text-primary">Solicitud</h4>
+        </div>
+        <input id="UsuarioAgent" type="hidden" value="@Model.Usuario" />
+        <input id="emailempre" type="hidden" value="@Model.Email" />
+        <input id="Id_LlamadaIVR" type="hidden" value="@Model.Id_LlamadaIVR" />
+
+        <div class="form-group row">
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Id Caso</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="CasoId" class="form-control" value="@Model.CasoId" readonly />
+            </div>
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Identificación</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="Identificacion" class="form-control" value="@Model.Identificacion" readonly />
+            </div>
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Nombre</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="Nombre" class="form-control" value="@Model.Nombre" readonly />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Cargo</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="CargoId" class="form-control" value="@Model.CargoId" readonly />
+            </div>
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Celular</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="Celular" class="form-control" value="@Model.Celular" readonly />
+            </div>
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Centro de Costo</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="CostoId" class="form-control" value="@Model.CostoId" readonly />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Categoría</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="CategotyId" class="form-control" value="@Model.CategotyId" readonly />
+            </div>
+            <div class="col-sm-1">
+                <label for="" class="col-5 col-form-label ">Subategoría</label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" id="SubCategoryyId" class="form-control" value="@Model.SubCategoryyId" readonly />
+            </div>
+
+        </div>
+
+        @if (Model.Canal == "Contacto")
+        {
+            <div class="form-group row">
+                <div class="col-sm-1">
+                    <label for="" class="col-6 col-form-label ">Descripción</label>
+                </div>
+                <div class="col-sm-11">
+                    <input type="text" id="DescriptionId" class="col-6 form-control" value="@Model.DescriptionId" readonly />
+                </div>
+            </div>
+        }
+        <div class="card-body" id="ContentForm">
+            <div class="card-header">
+                <h4 class="m-0 font-weight-bold text-primary">Atención</h4>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Sede</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="sedes" class="form-control" required onchange="refreshubicacion(this.value);">
+                        <option value=""> Seleccione..</option>
+                        @foreach (var item in sedes)
+                        {
+                            if (Model.Sede == item.SedeName)
+                            {
+                                selected = "selected";
+                                idubi = item.SedeId;
+                            }
+                            else
+                            {
+                                selected = "";
+                            }
+
+                            <option @selected value="@item.SedeId">@item.SedeName</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Ubicación</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="ubicacion" class="form-control" required onfocus="refreshubicacion(@idubi);"></select>
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Asignado A</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="asignadoa" class="form-control" required disabled>
+                        <option selected value="@Model.NombreAgente ">@Model.NombreAgente</option>
+                        @foreach (var item in asignadoas)
+                        {
+                            <option value="@item.AsignadoAName">@item.AsignadoAName</option>
+                        }
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label " required>Categoría</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="categoria" class="form-control" onchange="changeCategoria(this.value,'@Model.CargoId');">
+                        <option value=""> Seleccione..</option>
+                        @foreach (var item in categorias)
+                        {
+                            <option value="@item.CategoriaId">@item.CategoriaName</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Subategoría</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="subcategoria" class="form-control" onchange="changeSubCategoria(this.value)"></select>
+                </div>
+
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Detalle</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="detalle" class="form-control"></select>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" id="detalle2" class="form-control" style="display:none">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Requiere Escalamiento</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="escalamiento" class="form-control" onchange="validarescal(this.value);">
+                        <option value=""> Seleccione..</option>
+
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+
+                    </select>
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Escalado A </label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="escaladoa" class="form-control" onchange="listcorreos(this.value)" disabled>
+                        <option value=""> Seleccione..</option>
+
+                        @foreach (var item in escaladoas)
+                        {
+                            <option value="@item.EscaladoAId">@item.EscaladoAName</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Fecha Escalamiento</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" id="fescalamiento" value="" disabled />
+
+                    <a onclick="bodymailload()" data-toggle="modal" id="enviarcorreo" data-target="#myModalc" style="display:none;">Enviar Correo</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModalc" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Escalar</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <label>Asunto:</label><p></p>
+                                    <input type="text" name="asuntomail" value="@Model.CasoId" id="asuntomail" style=" width: 100%; max-width: 526px;" disabled /><p></p>
+                                    <label>Destinatarios</label><p></p>
+                                    <input type="text" name="Correos" id="Correos" placeholder="example@email.com" style=" width: 100%; max-width: 526px;" disabled /><p></p>
+                                    <label>Cuerpo del mensaje</label><p></p>
+                                    <textarea name="bodymail" id="bodymail" rows="10" style=" width: 100%; max-width: 526px;"></textarea><p></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-success" onclick="Enviarcorreo(this)">Enviar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                @*<div class="col-sm-1" id="rtae" style="display:none;">
+                    <label for="" class="col-5 col-form-label ">Respuesta Escalamiento </label>
+                </div>*@
+                <div class="col-sm-3" id="escal" style="display:none;">
+                    <table class="table table-striped">
+                        <thead>
+
+                        <th>Nro</th>
+                        <th>Cuerpo de correo</th>
+                        <th></th>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in body)
+                            {
+                                <tr>
+                                    <td>
+                                        @cont
+                                    </td>
+                                    <td>
+                                        @item.ContenidoMsj.Substring(0, 20)
+                                    </td>
+                                    <td>
+                                        <a data-toggle="modal" data-target="#myModalc_@cont">ver más</a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModalc_@cont" role="dialog">
+                                            <div class="modal-dialog">
+
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">Correo escalado</h4>
+                                                    </div>
+
+                                                    <div class="modal-body">
+
+                                                        <textarea name="bodymail" id="bodymail" rows="20" cols="200" style="max-width: 557px;">
+                                                            @item.ContenidoMsj
+                                                        </textarea><p></p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+
+                                cont++;
+                            }
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Solución</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="soluciones" class="form-control">
+                        <option value=""> Seleccione..</option>
+                        @foreach (var item in soluciones)
+                        {
+                            <option value="@item.SolucionName">@item.SolucionName</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label ">Llamada Transferida</label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="transferencia" class="form-control" onchange="llenarTranferidode(this.value)" >
+                        <option value=""> Seleccione..</option>
+                        @foreach (var item in transferencias)
+                        {
+                            <option value="@item.TransferenciaId">@item.TransferenciaName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-1">
+                        <label for="" class="col-5 col-form-label ">Transferida de:</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" id="transferidade" class="form-control" @*value="@Model.Canal"*@ readonly />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-1">
+                    <label for="" class="col-5 col-form-label "> Estado </label>
+                </div>
+                <div class="col-sm-3">
+                    <select id="estados" class="form-control" onchange="cerrado(this.value)">
+                        <option value=""> Seleccione..</option>
+                        @foreach (var item in estados)
+                        {
+                            <option value="@item.EstadoName">@item.EstadoName</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-1" id="lsol" style="display:none;">
+                    <label for="" class="col-5 col-form-label ">Fecha y hora solución</label>
+                </div>
+                <div class="col-sm-3" id="fsol" style="display:none;">
+                    <input type="datetime-local" value="@stampa" id="fsolucion" class="form-control" disabled />
+                </div>
+                <div class="col-sm-1" id="ans1" style="display:none;">
+                    <label for="" class="col-5 col-form-label ">ANS</label>
+                </div>
+                <div class="col-sm-3" id="ans2" style="display:none;">
+                    <input type="text" id="ans" class="form-control" disabled />
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <div class="col-sm-5">
+                    <button id="botonGuardar" class="btn btn-success" onclick="Guardar(this)">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Scripts/GetCaso.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#enviarcorreo").click(function () {
+                var Nombre = $("#Nombre").val();
+                var identificacion = $("#Identificacion").val();
+                var campaña = $("#CostoId").val();
+                var CargoId = $("#CargoId").val();
+                if ($("#categoria").val() === '' || $("#categoria").val() === "") {
+                    var categoria = '';
+                } else {
+                    var cat = document.getElementById("categoria");
+                    var categoria = cat.options[cat.selectedIndex].text;
+                } 
+                if ($("#subcategoria").val() === '' || $("#subcategoria").val() === null) {
+                    var subcategoria = '';
+                } else {
+                    var subcat = document.getElementById("subcategoria");
+                    var subcategoria = subcat.options[subcat.selectedIndex].text;
+                }
+                var ubicacion = $("#ubicacion").val(); 
+                if ($("#ubicacion").val() === '' || $("#ubicacion").val() === null ){
+                    var ubicacion = '';
+                }  
+                var detalle = $("#detalle").val(); 
+                if ($("#detalle").val() === '' || $("#detalle").val() === null ){
+                    var detalle = '';
+                }  
+                var asignadoa = $("#asignadoa").val(); 
+                /*if (categoria == null || categoria == '' || categoria == 'undefined') {
+                    categoria = ''
+                }
+                if (subcategoria == null || subcategoria == '' || subcategoria == 'undefined') {
+                    subcategoria = ''
+                }
+                if (detalle == null || detalle == '' || detalle == 'undefined') {
+                    detalle = ''
+                }
+                if (ubicacion == null || ubicacion == '' || ubicacion == 'undefined') {
+                    ubicacion = ''
+                }*/
+                var bodymail =
+                    "Nombre de usuario: " + Nombre +
+                    "Cédula: " + identificacion +
+                    "Campaña: " + campaña +
+                    "Cargo: " + CargoId +
+                    "Categoría: " + categoria +
+                    "Subcategoría: " + subcategoria +
+                    "Ubicación: " + ubicacion +
+                   // "Anydesk (Si aplica):"++
+                "Diagnostico o Descripción del problema: " + detalle +
+                    "Tecnico que ejecuta:" + asignadoa;
+
+                $("#bodymail").text('test');
+                 
+            });
+            validarCaso();
+        });
+
+
+
+    // 24 hour clock
+    var today = new Date("@horasoli");
+    setInterval(function () {
+    let date = new Date()
+
+    let day = date.getDate()
+    let month = date.getMonth() + 1
+    let year = date.getFullYear()
+    let fecha = "";
+    var m = "";
+    var di = "";
+    if (month < 10) {
+    m = "0";
+    } else {
+    m = "";
+    }
+    if (day < 10) {
+    di = "0";
+    } else {
+    di = "";
+    }
+
+    fecha = (`${year}-${m+month}-${di+day}`)
+    var endDate = new Date();
+    var days = parseInt((endDate - today) / (1000 * 60 * 60 * 24));
+    var hours = parseInt(Math.abs(endDate - today) / (1000 * 60 * 60) % 24);
+    var minutes = parseInt(Math.abs(endDate.getTime() - today.getTime()) / (1000 * 60) % 60);
+    var seconds = parseInt(Math.abs(endDate.getTime() - today.getTime()) / (1000) % 60);
+    // Compose the string for display
+    if (hours <= 9) {
+    hours = "0" + hours;
+    }
+    if (minutes <= 9) {
+    minutes = "0" + minutes;
+    }
+    if (seconds <= 9) {
+    seconds = "0" + seconds;
+    }
+    var currentTimeString =/* days + "dia(s) "*/ fecha +" " +hours + ":" + minutes + ":" + seconds;
+    $(".clock").html(currentTimeString);
+    $("#clock").val(currentTimeString);
+    // fsolucion
+    var endDate = new Date();
+
+    var hoy = endDate.toLocaleDateString();
+    days = parseInt((endDate) / (1000 * 60 * 60 * 24));
+    hours = (parseInt(Math.abs(endDate.getTime()) / (1000 * 60 * 60) % 24));
+    //alert(hours);
+    minutes = parseInt(Math.abs(endDate.getTime()) / (1000 * 60) % 60);
+    seconds = parseInt(Math.abs(endDate.getTime()) / (1000) % 60);
+    switch (hours) {
+    case 1:
+    hours = 20;
+    break;
+    case 2:
+    hours = 21;
+    break;
+    case 3:
+    hours = 22;
+    break;
+    case 4:
+    hours = 23;
+    break;
+
+    }
+    hours = hours - 5;
+    // Compose the string for display
+    if (hours <= 9) {
+    hours = "0" + hours;
+    }
+    if (minutes <= 9) {
+    minutes = "0" + minutes;
+    }
+    if (seconds <= 9) {
+    seconds = "0" + seconds;
+    }
+    var currentTimeString =/* days + "dia(s) "*/ fecha + "T" + hours + ":" + minutes + ":" + seconds;
+
+    $("#fsolucion").val(currentTimeString);
+    }, 1000);
+
+    </script>
+}

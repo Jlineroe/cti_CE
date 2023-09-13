@@ -1,0 +1,635 @@
+﻿@{
+    @model NavegaTIC.Models.CargaDataClaroColNavegaTIC
+    Dictionary<string, string> Departamentos = ViewBag.Departamentos;
+    Dictionary<string, string> Municipios = ViewBag.Municipios;
+    List<SelectListItem> Tipificacion1 = (List<SelectListItem>)ViewBag.Tipificacion1;
+    Dictionary<string, string> Tipificacion2 = ViewBag.Tipificacion2;
+}
+
+<input type="hidden" value="@Model.ID"  id="Id"/>
+<input type="hidden" value="@Model.IdAgente" id="IdAgente"/>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Primer Nombre</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_PRIMER_NOMBRE" id="txt_BEN_PRIMER_NOMBRE" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Segundo Nombre</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_SEGUNDO_NOMBRE" id="txt_BEN_SEGUNDO_NOMBRE" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Primer Apellido</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_PRIMER_APELLIDO" id="txt_BEN_PRIMER_APELLIDO" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Segundo Apellido</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_SEGUNDO_APELLIDO" id="txt_BEN_SEGUNDO_APELLIDO" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Tipo de documento</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_TIPO_DOCUMENTO" id="txt_BEN_TIPO_DOCUMENTO" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Numero de documento</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_DOCUMENTO" id="txt_BEN_DOCUMENTO" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Fecha de nacimiento</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_FECHA_NACIMIENTO" id="txt_BEN_FECHA_NACIMIENTO" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Fecha expedición documento</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_FECHA_EXPEDICION" id="txt_BEN_FECHA_EXPEDICION" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Correo electrónico</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_CORREO" id="txt_BEN_CORREO" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Número de teléfono 1</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_TELEFONO1" id="txt_BEN_TELEFONO1" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Número de teléfono 2</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_TELEFONO2" id="txt_BEN_TELEFONO2" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Número de teléfono 3</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_TELEFONO3" id="txt_BEN_TELEFONO3" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Dirección de residencia Barrio/Vereda</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_DIRECCION" id="txt_BEN_DIRECCION" />
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Departamento</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="hidden" id="txt_BEN_DEPARTAMENTO_HIDEN" value="@Model.BEN_DEPARTAMENTO"/>
+        <select id="txt_BEN_DEPARTAMENTO" class="form-control" onchange="changeDepartamento()">
+            @*<option value=""> Seleccione..</option>
+            @foreach (var item in Departamentos)
+            {
+                if (Model.BEN_DEPARTAMENTO != null && Model.BEN_DEPARTAMENTO != "" && Model.BEN_DEPARTAMENTO.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+
+                }
+
+            }*@
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Municipios</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="hidden" id="txt_BEN_CIUDAD_HIDEN" value="@Model.BEN_CIUDAD" />
+
+        <select id="txt_BEN_CIUDAD" class="form-control">
+
+            @*<option value=""> Seleccione..</option>
+            @foreach (var item in Municipios)
+            {
+                if (Model.BEN_CIUDAD != null && Model.BEN_CIUDAD != "" && Model.BEN_CIUDAD.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+                }
+            }*@
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Barrio/Vereda</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_BARRIO_O_VEREDA" id="txt_BEN_BARRIO_O_VEREDA" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Código Dane de Ciudad/Municipio de residencia</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.BEN_CODIGO_DANE" id="txt_BEN_CODIGO_DANE" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Estrato</label>
+    </div>
+    <div class="col-sm-5">
+
+        <select id="txt_BEN_ESTRATO" class="form-control">
+            <option value=""> Seleccione..</option>
+            @{
+                Dictionary<string, string> Estratos = new Dictionary<string, string>();
+                Estratos.Add("1", "1");
+                Estratos.Add("2", "2");
+            }
+            @foreach (var item in Estratos)
+            {
+                if (Model.BEN_ESTRATO != null && Model.BEN_ESTRATO != "" && Model.BEN_ESTRATO.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+
+                }
+
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Equipo 4G</label>
+    </div>
+    <div class="col-sm-5">
+
+        <select id="txt_BEN_EQUIPO4G" class="form-control" onchange="esquipo4GChange(this.value)">
+            <option value=""> Seleccione..</option>
+            @{
+                Dictionary<string, string> Equipo4g = new Dictionary<string, string>();
+                Equipo4g.Add("SI", "SI");
+                Equipo4g.Add("NO", "NO");
+            }
+
+            @foreach (var item in Equipo4g)
+            {
+                if (Model.BEN_EQUIPO4G != null && Model.BEN_EQUIPO4G != "" && Model.BEN_EQUIPO4G.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+
+                }
+
+            }
+        </select>
+    </div>
+</div>
+<div id="form4G">
+    <div class="form-group row">
+        <div class="col-sm-5">
+            <label for="" class="col-5 col-form-label ">¿Tiene Servicios de internet, Línea móvil con servicios postpago?</label>
+        </div>
+        <div class="col-sm-5">
+
+            <select id="txt_BEN_SERVICIOS_ACTIVOS" class="form-control" onchange="servicioActivoChange(this.value)">
+                <option value=""> Seleccione..</option>
+                @{
+                    Dictionary<string, string> servicios = new Dictionary<string, string>();
+                    servicios.Add("SI", "SI");
+                    servicios.Add("NO", "NO");
+                }
+                @foreach (var item in servicios)
+                {
+                    if (Model.BEN_SERVICIOS_ACTIVOS != null && Model.BEN_SERVICIOS_ACTIVOS != "" && Model.BEN_SERVICIOS_ACTIVOS.ToUpper() == item.Value.ToUpper())
+                    {
+                        <option value="@item.Value" selected="selected">@item.Value</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Value">@item.Value</option>
+
+                    }
+
+                }
+            </select>
+        </div>
+    </div>
+    <div id="formServicioActivo">
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Estoy dispuesto a pagar el valor de la SIMCARD ($5.450) incluido IVA, por una única vez al momento de su entrega</label>
+            </div>
+            <div class="col-sm-5">
+
+                <select id="txt_BEN_PAGARIA_SIM" class="form-control">
+                    <option value=""> Seleccione..</option>
+                    @{
+                        Dictionary<string, string> pagaSIM = new Dictionary<string, string>();
+                        pagaSIM.Add("SI", "SI");
+                    }
+                    @foreach (var item in pagaSIM)
+                    {
+                        if (Model.BEN_PAGARIA_SIM != null && Model.BEN_PAGARIA_SIM != "" && Model.BEN_PAGARIA_SIM.ToUpper() == item.Value.ToUpper())
+                        {
+                            <option value="@item.Value" selected="selected">@item.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Value">@item.Value</option>
+
+                        }
+
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Confirmación de pago de la SIMCARD</label>
+            </div>
+            <div class="col-sm-5">
+
+                <select id="txt_BEN_CONFIRMA_PAGARIA_SIM" class="form-control">
+                    <option value=""> Seleccione..</option>
+                    @{
+                        Dictionary<string, string> ConfpagaSIM = new Dictionary<string, string>();
+                        ConfpagaSIM.Add("SI", "SI");
+                    }
+                    @foreach (var item in ConfpagaSIM)
+                    {
+                        if (Model.BEN_CONFIRMA_PAGARIA_SIM != null && Model.BEN_CONFIRMA_PAGARIA_SIM != "" && Model.BEN_CONFIRMA_PAGARIA_SIM.ToUpper() == item.Value.ToUpper())
+                        {
+                            <option value="@item.Value" selected="selected">@item.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Value">@item.Value</option>
+
+                        }
+
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Nombre institución educativa Universidad Publica, o Sena</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" value="@Model.BEN_INSTITUCION_EDUCATIVA" id="txt_BEN_INSTITUCION_EDUCATIVA" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Nombre institución educativa Universidad Publica, o Sena</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" value="@Model.BEN_INST_DIRECCION" id="txt_BEN_INST_DIRECCION" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Departamento de la institución educativa</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="hidden" id="txt_BEN_INST_DEPARTAMENTO_HIDEN" value="@Model.BEN_INST_DEPARTAMENTO" />
+
+                <select id="txt_BEN_INST_DEPARTAMENTO" class="form-control" onchange=changedepartamentosinst()>
+                    @*<option value=""> Seleccione..</option>
+            @foreach (var item in Departamentos)
+            {
+                if (Model.BEN_INST_DEPARTAMENTO != null && Model.BEN_INST_DEPARTAMENTO != "" && Model.BEN_INST_DEPARTAMENTO.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+
+                }
+
+            }*@
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Ciudad/Municipio  de la institución educativa</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="hidden" id="txt_BEN_INST_CIUDAD_HIDEN" value="@Model.BEN_INST_CIUDAD" />
+
+
+                <select id="txt_BEN_INST_CIUDAD" class="form-control">
+                    @*<option value=""> Seleccione..</option>
+            @foreach (var item in Municipios)
+            {
+                if (Model.BEN_INST_CIUDAD != null && Model.BEN_INST_CIUDAD != "" && Model.BEN_INST_CIUDAD.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+
+                }
+
+            }*@
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Codigo Dane de Municipio</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" value="@Model.BEN_INST_CODIGO_DANE" id="txt_BEN_INST_CODIGO_DANE" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Grado o semestre que está cursando actualmente</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" value="@Model.BEN_NIVEL_ESCOLAR" id="txt_BEN_NIVEL_ESCOLAR" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Cuantos meses le hacen falta para culminar su grado o carrera</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" value="@Model.BEN_TIEMPO_FALTANTE" id="txt_BEN_TIEMPO_FALTANTE" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="" class="col-5 col-form-label ">Es menor de edad</label>
+            </div>
+            <div class="col-sm-5">
+                <select id="txt_ES_MENOR" class="form-control" onchange="changeMenor(this.value)">
+                    <option value=""> Seleccione..</option>
+                    @{
+                        Dictionary<string, string> menor = new Dictionary<string, string>();
+                        menor.Add("SI", "SI");
+                        menor.Add("NO", "NO");
+                    }
+                    @foreach (var item in menor)
+                    {
+                        if (Model.ES_MENOR != null && Model.ES_MENOR != "" && Model.ES_MENOR.ToUpper() == item.Value.ToUpper())
+                        {
+                            <option value="@item.Value" selected="selected">@item.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Value">@item.Value</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+        <div id="formRepresentante" class="hidden">
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Primer nombre (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_PRIMER_NOMBRE" id="txt_REPRE_PRIMER_NOMBRE" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Segundo nombre (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_SEGUNDO_NOMBRE" id="txt_REPRE_SEGUNDO_NOMBRE" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label "> Primer apellido (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_PRIMER_APELLIDO" id="txt_REPRE_PRIMER_APELLIDO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Segundo apellido (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_SEGUNDO_APELLIDO" id="txt_REPRE_SEGUNDO_APELLIDO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Tipo de documento (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_TIPO_DOCUMENTO" id="txt_REPRE_TIPO_DOCUMENTO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Numero de documento (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control" value="@Model.REPRE_DOCUMENTO" id="txt_REPRE_DOCUMENTO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Parentesco (Afinidad con el menor de edad)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_PARENTESCO" id="txt_REPRE_PARENTESCO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Dirección de residencia (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_DIRECCION" id="txt_REPRE_DIRECCION" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Departamento representante (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_DEPARTAMENTO" id="txt_REPRE_DEPARTAMENTO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Municipio representante (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_MUNICIPIO" id="txt_REPRE_MUNICIPIO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Código Dane de Ciudad/Municipio de residencia (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_COD_DANE" id="txt_REPRE_COD_DANE" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Barrio/Vereda (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_BARRIO" id="txt_REPRE_BARRIO" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="" class="col-5 col-form-label ">Correo electrónico (DATOS DEL REPRESENTANTE LEGAL DEL MENOR DE EDAD)</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" value="@Model.REPRE_CORREO" id="txt_REPRE_CORREO" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Tipificación  1</label>
+    </div>
+    <div class="col-sm-5">
+
+        <select id="txt_Tipificacion1" class="form-control" onchange="changeTipificacion(this.value)">
+            <option value=""> Seleccione..</option>
+            @foreach (var item in Tipificacion1)
+            {
+                if (Model.Tipificacion1 != null && Model.Tipificacion1 != "" && Model.Tipificacion1.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+                }
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Tipificación  2</label>
+    </div>
+    <div class="col-sm-5">
+        <input id="txt_Tipificacion2_Hidden" type="hidden" value="@Model.Tipificacion2" />
+        <select id="txt_Tipificacion2" class="form-control">
+            <option value=""> Seleccione..</option>
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Podría atendernos en los próximos tres días</label>
+    </div>
+    <div class="col-sm-5">
+        <select id="txt_3dias" class="form-control" >
+            <option value=""> Seleccione..</option>
+            @{
+                Dictionary<string, string> puede3dias = new Dictionary<string, string>();
+                puede3dias.Add("SI", "SI");
+                puede3dias.Add("NO", "NO");
+            }
+            @foreach (var item in menor)
+            {
+                if (Model.En_3DIAS != null && Model.En_3DIAS != "" && Model.En_3DIAS.ToUpper() == item.Value.ToUpper())
+                {
+                    <option value="@item.Value" selected="selected">@item.Value</option>
+                }
+                else
+                {
+                    <option value="@item.Value">@item.Value</option>
+                }
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Si no puede, Que día podría atendernos (DIA/MES)</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.FECHA_ATENCION" id="txt_FECHA_ATENCION" />
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-5">
+        <label for="" class="col-5 col-form-label ">Dirección de entrega SIM</label>
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" value="@Model.DIRECCION_ENTREGA" id="txt_DIRECCION_ENTREGA" />
+    </div>
+</div>
+<div class="form-group row">
+
+    <div class="col-sm-5">
+        <button class="btn btn-success" onclick="Guardar(this)">Guardar</button>
+    </div>
+</div>
+

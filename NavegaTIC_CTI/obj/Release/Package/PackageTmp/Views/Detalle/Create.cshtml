@@ -1,0 +1,119 @@
+﻿@model NavegaTIC_CTI.Models.Detalle
+
+@{
+    List<NavegaTIC_CTI.Models.Subcategoria> subcategorias = ViewBag.subcategorias;
+    List<NavegaTIC_CTI.Models.Campana> campanas = ViewBag.campanas;
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .select-editable {
+        position: relative;
+        background-color: white;
+        border: solid grey 1px;
+        width: 120px;
+        height: 18px;
+    }
+
+        .select-editable select {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-size: 14px;
+            border: none;
+            width: 120px;
+            margin: 0;
+        }
+
+        .select-editable input {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100px;
+            padding: 1px;
+            font-size: 12px;
+            border: none;
+        }
+
+            .select-editable select:focus, .select-editable input:focus {
+                outline: none;
+            }
+</style>
+<h2>Crear</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Detalle</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.SubcategoriaName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <select id="IdSubcategoria" class="form-control" name="IdSubcategoria" onclick="validarcam();">
+                <option value=""> Seleccione..</option>
+                @foreach (var item in subcategorias)
+                {
+                   if ((item.SubcategoriaId >= 31 && item.SubcategoriaId <= 33) || (item.SubcategoriaId == 35)) { 
+                    <option value="@item.SubcategoriaId">@item.SubcategoriaName</option>
+                    }
+                    
+                }
+            </select>
+        </div>
+    </div>
+    <div class="form-group" id="campana_all" style="display:none;">
+        @Html.LabelFor(model => model.Campaña, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="select-editable">
+                <select  onchange="this.nextElementSibling.value=this.value">
+                    <option value=""> Seleccione..</option>
+                    @foreach (var item in campanas)
+                    {
+                        <option value="@item.CampanaName">@item.CampanaName</option>
+                    }
+                </select>
+                <input type="text" name="Campaña" id="Campaña"  value="" />
+            </div>
+            </div>
+        </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.DetalleName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.DetalleName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.DetalleName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Volver a la lista", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script>
+    function validarcam() {
+        let sub = $('#IdSubcategoria').val();
+        if (sub == 33) {
+            $('#campana_all').css("display", "");
+
+        } else {
+            $('#Campaña').val("");
+            $('#campana_all').css("display", "none");
+        }
+    }
+</script>
+}

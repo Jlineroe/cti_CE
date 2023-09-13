@@ -1,0 +1,220 @@
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll.config
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\NavegaTIC_CTI.pdb
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\Antlr3.Runtime.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\Newtonsoft.Json.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Helpers.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Mvc.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Optimization.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Razor.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.WebPages.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\WebGrease.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Helpers.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Mvc.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Optimization.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.Razor.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.WebPages.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\Newtonsoft.Json.xml
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\Antlr3.Runtime.pdb
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.Razor.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.AssemblyReference.cache
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.Properties.Resources.resources
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.GenerateResource.cache
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CoreCompileInputs.cache
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CopyComplete
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.dll
+C:\Users\rfrodiguez\source\repos\NavegaTIC_CTI\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.pdb
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll.config
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.pdb
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\WebGrease.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.xml
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.pdb
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Razor.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.Properties.Resources.resources
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.GenerateResource.cache
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CoreCompileInputs.cache
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CopyComplete
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.dll
+C:\Users\rfrodiguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.pdb
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll.config
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.pdb
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\WebGrease.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.xml
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.pdb
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Razor.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.Properties.Resources.resources
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.GenerateResource.cache
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CoreCompileInputs.cache
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CopyComplete
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.dll
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.pdb
+C:\Users\jamendoza\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.AssemblyReference.cache
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll.config
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.pdb
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Microsoft.Web.Infrastructure.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\WebGrease.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.xml
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.pdb
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Helpers.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Mvc.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Optimization.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Razor.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.Properties.Resources.resources
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.GenerateResource.cache
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CoreCompileInputs.cache
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CopyComplete
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.dll
+C:\BACKUP RODRIGUEZ\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.pdb
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll.config
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.pdb
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\WebGrease.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.xml
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.pdb
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Razor.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.AssemblyReference.cache
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.Properties.Resources.resources
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.GenerateResource.cache
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CoreCompileInputs.cache
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CopyComplete
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.dll
+C:\Users\rfrodriguez\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.pdb
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll.config
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\NavegaTIC_CTI.pdb
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\WebGrease.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Helpers.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Mvc.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Optimization.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.Razor.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\System.Web.WebPages.Razor.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Newtonsoft.Json.xml
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\Antlr3.Runtime.pdb
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.Razor.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.AssemblyReference.cache
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.Properties.Resources.resources
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.GenerateResource.cache
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CoreCompileInputs.cache
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.csproj.CopyComplete
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.dll
+C:\Users\jlinero\source\repos\Cti_CentroExperiencia\NavegaTIC_CTI\obj\Debug\NavegaTIC_CTI.pdb

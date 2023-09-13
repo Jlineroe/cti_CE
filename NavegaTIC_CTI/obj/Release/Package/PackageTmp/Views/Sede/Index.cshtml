@@ -1,0 +1,35 @@
+﻿@model IEnumerable<NavegaTIC_CTI.Models.Sede>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Crear nueva Sede", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nombre de la Sede
+        </th>
+        <th>
+            Acción
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SedeName)
+        </td>
+        <td>
+            @Html.ActionLink("Actualizar", "Edit", new { id = item.SedeId }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.SedeId })
+        </td>
+    </tr>
+}
+
+</table>

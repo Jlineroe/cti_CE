@@ -1,0 +1,105 @@
+﻿@model NavegaTIC_CTI.Models.Encuesta
+
+@{
+    string checked2= "";
+    string checked3 = "";
+    string disabled = "";
+    ViewBag.Title = "Encuesta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    textarea {
+        width: 3000px;
+        height: 125px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+</style>
+@if (Model.IdCTiCE != 0)
+{
+    <div class="hh" style="
+    background-color: skyblue;
+">
+        <h2>Queremos conoces tu experiencia </h2>
+        <h3>
+            Para nosotros es importante concer tu opinión sobre la atención recibida, por favor
+            diligencia la siguiente encuesta
+        </h3>
+    </div>
+
+    using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @if(Model.RespuestaEncuesta == "Si")
+            {
+                checked2="checked";
+            }
+            else if (Model.RespuestaEncuesta == "No")
+            {
+                checked3 = "checked";
+            }
+            @if(Model.CometarioEncuesta != "")
+            {
+                disabled = "disabled";
+            }
+            @Html.HiddenFor(model => model.IdCTiCE)
+
+
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.RespuestaEncuesta, htmlAttributes: new { @class = "control-label col-md-12" })
+                <div class="col-md-12">
+                    <div class="radio">
+                        <label><input @checked2 type="radio" name="RespuestaEncuesta" value="Si">Si</label>
+                    </div>
+                    <div class="radio">
+                        <label><input @checked3 type="radio" name="RespuestaEncuesta" value="No">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.CometarioEncuesta, htmlAttributes: new { @class = "control-label col-md-12" })
+                <div class="col-md-12">
+                    @Html.TextAreaFor(model => model.CometarioEncuesta, new { htmlAttributes = new { @class = "form-control"} })
+                    @Html.ValidationMessageFor(model => model.CometarioEncuesta, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            @if (Model.CometarioEncuesta == null)
+            {
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Enviar" class="btn btn-default" />
+                </div>
+            </div>
+            }
+        </div>
+    }
+
+
+
+
+
+
+    <div>
+
+    </div>
+}
+else
+{
+<div class="container">
+    <h4>Estamos agradecidos!</h4>
+    
+    <img class="img-responsive" src="https://i.pinimg.com/736x/a1/7a/79/a17a79b8e175b2af651d1de44ad28841--blogger-blogs-tes.jpg" alt="Chania" width="460" height="345">
+</div>
+
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
